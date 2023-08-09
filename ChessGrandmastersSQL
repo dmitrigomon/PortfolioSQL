@@ -1,14 +1,4 @@
 select * from GM
-
---order by Name
---DATE FORMAT CHANGE
-
---alter table GM
---drop column DateDeath, DeathYear, DeathMonth, DeathDay
-
---alter table GM
---drop column BirthYear, BirthMonth, BirthDay, MonthText, NameFirst, NameLast
-
 ----------------------------------------------------------------------------
 --Split into 3 columns - Year, Month, Day
 alter table GM
