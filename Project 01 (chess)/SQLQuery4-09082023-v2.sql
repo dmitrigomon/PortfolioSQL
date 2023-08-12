@@ -82,7 +82,7 @@ end;
 --CHARINDEX(' ', Name) > 0 checks if a space character exists in the your_column string.
 --Inside each CASE statement, we use SUBSTRING to extract the relevant portions of the string:
 --SUBSTRING(your_column, 1, CHARINDEX(',', Name) - 1) extracts the substring before the comma (,) or space character.
---SUBSTRING(your_column, CHARINDEX(',', Name) + 1, LEN(your_column) - CHARINDEX(',', Name)) extracts the substring after the comma (,) or space character.
+--SUBSTRING(your_column, CHARINDEX(',', Name) + 1, LEN(Name) - CHARINDEX(',', Name)) extracts the substring after the comma (,) or space character.
 --LTRIM(RTRIM()) is used to remove any leading or trailing spaces from the extracted substrings.
 --The ELSE clause in the CASE statement handles cases where there's no comma or space, so it retains the original value in the column.
 --For NameFirst, if the delimiter is not found, we set it to NULL since there's no second part to extract.
